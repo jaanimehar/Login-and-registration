@@ -1,5 +1,5 @@
 body {
-    background: #f5f7f8;
+    background: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ form{
     padding: 40px 60px;
     border: 1px solid blue;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     /* transition: all 0.7s ease-in-out; */
 }
 /* form:hover{
@@ -81,8 +81,8 @@ input:hover{
 .home{
     background-color: white;
     padding: 40px 60px;
-    border: 1px solid blue;
+    border: 1px solid #0056d2;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(105, 107, 108) 0px 20px 30px -10px;
 
 }
