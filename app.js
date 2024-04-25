@@ -3,6 +3,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const Register_data = require('./models/register')
 require("./db/conn")
+require('dotenv').config();
 const port = process.env.PORT || 3000;
 const app = express();
 
