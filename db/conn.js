@@ -1,8 +1,9 @@
-const mongoose=require("mongoose");
+const mongoose = require("mongoose");
+const uri = "mongodb+srv://harrysaif675:BPo9P3FRdsq2yt97@clusterform.rsnxi70.mongodb.net/form?retryWrites=true&w=majority&appName=ClusterForm";
 
-mongoose.connect('mongodb://127.0.0.1:27017/form').then(()=>{
+mongoose.connect(uri).then(() => {
     console.log('connection is successfull');
-}).catch((error)=>{
+}).catch((error) => {
     console.log(error);
 
 });
