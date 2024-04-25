@@ -86,7 +86,7 @@ input:hover{
     box-shadow: rgb(105, 107, 108) 0px 20px 30px -10px;
 }
 /* home media query */
-@media only screen and (min-width:373px) and (max-width:668px) {
+@media only screen and (min-width:360px) and (max-width:741px) {
     .homediv {
         width: 65%;
         padding: 20px 25px;
@@ -116,4 +116,5 @@ input:hover{
         margin: 10px;
     }
     
-}    
+} 
+/*       */
