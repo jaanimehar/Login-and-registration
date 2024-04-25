@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <form id="registrationForm" onsubmit="return validateForm()" method="POST" action="/register">
+    <h3 style=" text-align: center;">Registration Form</h3>
+    <input type="text" id="firstname" name="firstname" placeholder="First name" required><br><br>
+    <input type="text" id="lastname" name="lastname" placeholder="Last name" required><br><br>
+    <input type="text" mobileno." id="mobileno" name="mobileno" placeholder="mobile no" required><br><br>
+    <input type="email" id="email" name="email" placeholder="email"><br required><br>
+    <input type="password" id="password" name="password" placeholder="password" required><br><br>
+    <input type="password" id="confirmpassword" name="confirmpassword" placeholder="confirm password" required><br><br>
+    <a href="/login" class="a1">already have account.</a><br><br>
+    <button class="btn" type="submit">Sign Up</button>
+  </form>
+
+  <script>
+
+    function validateForm() {
+      var fullname = document.getElementById('firstname').value.trim();
+      var lastname = document.getElementById('lastname').value.trim();
+      var mobileno = document.getElementById('mobileno').value;
+      var email = document.getElementById('email').value.trim();
+      var password = document.getElementById('password').value;
+      var confirmpassword = document.getElementById('confirmpassword').value;
+
+
+      if (firstname === '' || lastname === '' || mobileno === '' || email === '' || password === '' || confirmpassword === '') {
+        alert('All fields are required');
+        return false;
+      }
+
+      if (password !== confirmpassword) {
+        alert('Passwords do not match');
+        return false;
+      }
+
+      return true;
+    }
+
+  </script>
+
+</body>
+
+</html>
