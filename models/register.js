@@ -9,6 +9,11 @@ const userSchema = new mongoose.Schema({
     confirmpassword:{type:String, required:true},
 
 });
+userSchema.pre("save",async(next)=>{
+    const passwordHash=await bcrypt.hash(password, 10);
+    next();
+
+});
 // model
 const  Register_data= new mongoose.model('user_detail', userSchema);
 module.exports=Register_data;

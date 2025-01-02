@@ -15,12 +15,15 @@ app.set("view engine", "ejs")
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
+// get home
 app.get('/', (req, res) => {
     res.render('home');
 });
+// get login
 app.get('/login', (req, res) => {
     res.render('login');
 });
+// get register
 app.get('/register', (req, res) => {
     res.render('register');
 });
@@ -60,4 +63,5 @@ app.post('/login', async (req, res) => {
     }
 });
 
+// listen port
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
